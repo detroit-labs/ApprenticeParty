@@ -7,3 +7,19 @@
 //
 
 #import "Kiwi.h"
+
+SPEC_BEGIN(ApprenticePartyTests)
+
+describe(@"Prime Factors", ^{
+    
+    NSArray *(^primeFactors)(int given) = ^NSArray *(int given) {
+        return @[@2];
+    };
+
+    it(@"factors of 2 should be @[2]", ^{
+        [[primeFactors(2) should] equal:@[@2]];
+    });
+    
+});
+
+SPEC_END

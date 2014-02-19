@@ -1,5 +1,5 @@
 platform :ios, '7.0'
 
 target :ApprenticePartyTests do
-	pod 'Kiwi'
+	pod 'Kiwi/XCTest'
 end
